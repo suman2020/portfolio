@@ -2,6 +2,12 @@ import SideBar from "../SideBar/SideBar";
 import NavBar from "../NavBar/NavBar";
 import {React, useState } from 'react';
 import HeroContent from "../BodySection/HeroContent";
+import Profile from "../Profile/Profile";
+import Projects from "../Projects/Project";
+import Skills from "../Skills/Skills";
+import Contact from "../Contact/Contact";
+import Experience from "../Experience/Experience";
+
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +22,12 @@ const Home = () => {
             <SideBar isOpen={isOpen} toggle={toggle} />
             <NavBar isOpen={isOpen} toggle={toggle} />
             <HeroContent/>
-
-
+            <Profile/>
+            <Skills/>
+            <Experience/>
+            <Projects/>
+            <Contact/>
+            
 
         </>
         );

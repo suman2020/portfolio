@@ -1,31 +1,36 @@
 import React from 'react';
 import { Nav, NavBarContainer, NavLogo, Bars, NavMenu, NavItem, NavLinks } from './NavBarElements';
+import { animateScroll as scroll } from 'react-scroll';
 
 const NavBar = ({ isOpen, toggle}) => {
+    const toggleHome=()=>{
+        scroll.scrollToTop();
+    }
+
     return (
         <>
             <Nav >
                 <NavBarContainer>
-                    <NavLogo to = '/'> Home </NavLogo>
+                    <NavLogo to = '/' onClick ={toggleHome}> Home </NavLogo>
                 </NavBarContainer>
                 
                 <Bars onClick={toggle} isOpen={isOpen}/>
                 
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to='about'>About Me</NavLinks>
+                        <NavLinks to='about' smooth={true} duration={500} spy={true} exact ='true' offset={-80}>About Me</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='skills'> Skills </NavLinks>
+                        <NavLinks to='skills' smooth={true} duration={500} spy={true} exact ='true' offset={-80}> Skills </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='experience'> Experience </NavLinks>
+                        <NavLinks to='experience' smooth={true} duration={500} spy={true} exact ='true' offset={-80}> Experience </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='projects'> Projects</NavLinks>
+                        <NavLinks to='projects' smooth={true} duration={500} spy={true} exact ='true' offset={-80}> Projects</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='contact'> Contact </NavLinks>
+                        <NavLinks to='contact' smooth={true} duration={500} spy={true} exact ='true' offset={-80}> Contact </NavLinks>
                     </NavItem>
                 </NavMenu>
             </Nav>
