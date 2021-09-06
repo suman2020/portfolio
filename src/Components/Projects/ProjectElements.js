@@ -80,6 +80,7 @@ export const LiveButton = styled.button`
     cursor: pointer;
     margin: 2px;
     color: palevioletred;
+    
     &:hover{
         transform: scale(1.3);
         color: yellow;
@@ -169,5 +170,13 @@ cursor: pointer;
     font-size: 10px;
     // transform: translate(0%, -200%);
 }
+`
+export const A = styled.a`
+    text-decoration: none;
+    color: palevioletred;
+    &:hover{
+        color: yellow;
+    }
+    
 `
 
