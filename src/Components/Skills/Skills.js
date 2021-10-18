@@ -4,7 +4,7 @@ const Skills = () =>{
     return(
         <>
         <div style={{backgroundColor:'grey'}}>
-        <h1>Skills</h1>
+        <h1 style={{color:"Orange", textAlign: "center", fontWeight:"bold",fontSize:'45px',  padding: "30px 0px 0px "}}>Skills</h1>
         <br/> 
         <SkillsContainer id="skills">
             

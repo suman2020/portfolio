@@ -33,7 +33,7 @@ export const ProjectHolder = styled.div`
 export const Title = styled.h1`
     font-size: 2em;
     // text-align: center;
-    color:orange ;
+    color:pink ;
     &:hover{
         color: red;
         // font-size: 3em;

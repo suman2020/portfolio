@@ -23,7 +23,7 @@ const HeroContent = () =>{
                         <SocialIcon url = "https://github.com/suman2020" bgColor="#DC8B6D " target ="_blank" title = "Github"/>
                     </SocialItems>
                     <SocialItems>
-                        <SocialIcon url = "mailto:magarsuman2030@gmail.com" target ="_blank" title="E-Mail"/>
+                        <SocialIcon url = "mailto:suman.thapamagar@mavs.uta.edu" target ="_blank" title="E-Mail"/>
                     </SocialItems>
                     <SocialItems>
                         <SocialIcon url = "https://twitter.com/MagarSuman13" target ="_blank" title="Twitter"/>

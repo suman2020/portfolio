@@ -11,7 +11,7 @@ const NavBar = ({ isOpen, toggle}) => {
         <>
             <Nav >
                 <NavBarContainer>
-                    <NavLogo to = '/' onClick ={toggleHome}> Home </NavLogo>
+                    <NavLogo to = '/' onClick ={toggleHome} style={{color: "greenyellow",fontWeight:"bold" , fontSize:'40px'}}> Home </NavLogo>
                 </NavBarContainer>
                 
                 <Bars onClick={toggle} isOpen={isOpen}/>
@@ -21,7 +21,7 @@ const NavBar = ({ isOpen, toggle}) => {
                         <NavLinks to='about' smooth={true} duration={500} spy={true} exact ='true' offset={-80}>About Me</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='skills' smooth={true} duration={500} spy={true} exact ='true' offset={-80}> Skills </NavLinks>
+                        <NavLinks to='skills' smooth={true} duration={500} spy={true} exact ='true' offset={-150}> Skills </NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to='experience' smooth={true} duration={500} spy={true} exact ='true' offset={-80}> Experience </NavLinks>
@@ -30,7 +30,7 @@ const NavBar = ({ isOpen, toggle}) => {
                         <NavLinks to='projects' smooth={true} duration={500} spy={true} exact ='true' offset={-80}> Projects</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='contact' smooth={true} duration={500} spy={true} exact ='true' offset={-80}> Contact </NavLinks>
+                        <NavLinks to='contact' smooth={true} duration={500} spy={true} exact ='true' > Contact </NavLinks>
                     </NavItem>
                 </NavMenu>
             </Nav>

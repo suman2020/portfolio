@@ -1,13 +1,25 @@
 import styled from 'styled-components';
 export const ContactContainer = styled.div`
     
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+
     
     // align-items:center;
-    padding: 0 30px;
-    height: 86vh;
+    padding: 20px 30px 40px;
+    justify-content: space-evenly;
+    align-items: center;
+
+  
     position: relative;
     z-index: 1;
-    background: orange;
+    background: black;
     `
+export const SocialHolder = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 15px
+
+
+`
+

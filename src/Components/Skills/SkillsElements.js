@@ -6,10 +6,16 @@ export const SkillsContainer = styled.div`
     
     // align-items:center;
     grid-gap: 1em 2em;
-    
+    padding: 10px 450px 30px;
     position: relative;
     z-index: 1;
-    
+    @media screen and (max-width: 768px){
+        padding: 1px 20px 5px;
+    }
+    @media screen and (max-width: 1250px){
+        padding: 1px 50px 5px;
+    }
+
 
 `
 export const ButtonL = styled.button`

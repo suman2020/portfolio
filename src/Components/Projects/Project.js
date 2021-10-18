@@ -10,7 +10,7 @@ import { Button } from "react-scroll";
 const Projects = () =>{
     return(
         <div id="projects">
-            <h1 style={{textAlign:'center', fontSize:'45px'}}>Projects</h1>
+            <h1 style={{textAlign:'center', fontSize:'45px', color:"orange"}}>Projects</h1>
             <ProjectsContainer >
             
                 <ProjectHolder>
